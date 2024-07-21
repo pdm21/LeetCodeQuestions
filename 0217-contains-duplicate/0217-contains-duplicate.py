@@ -5,5 +5,5 @@ class Solution:
             if num in d:
                 return True
             else:
-                d[num] = index
+                d[num] = 1
         return False
