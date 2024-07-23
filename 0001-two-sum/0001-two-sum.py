@@ -7,4 +7,4 @@ class Solution:
                 return [d.get(diff)] + [x]
             else:
                 d[nums[x]] = x
-        return []
+        return 0
