@@ -6,16 +6,13 @@
 #         self.right = right
 class Solution:
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
-        # check if tree is empty
         if not root:
             return None
         
-        # swap left and right children
         tmp = root.left
         root.left = root.right
         root.right = tmp
         
-        # recursive calls
         self.invertTree(root.left)
         self.invertTree(root.right)
         
